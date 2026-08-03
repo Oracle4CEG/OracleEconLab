@@ -96,7 +96,7 @@ def main() -> None:
     summary = summarize(load_and_validate())
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\\n")
         writer.writerow(["metric", "value"])
         writer.writerows(summary)
     print(f"Reproduced {OUTPUT.relative_to(ROOT)} from {INPUT.relative_to(ROOT)}")
