@@ -3,5 +3,8 @@ episodes,5
 disputed_episodes,2
 dispute_rate,0.400
 median_bond_usd,150.0
+median_reward_usd,20.0
+median_reward_to_bond_ratio,0.125
 median_resolution_hours,4.0
+successful_challenge_rate,0.500
 complete_evidence_rate,0.800
