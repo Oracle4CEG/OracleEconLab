@@ -1,0 +1,301 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/"
+  },
+  "@type": "sc:Dataset",
+  "name": "OracleEconLab Teaching MVP",
+  "description": "Five synthetic UMA-style economic episodes for teaching reproducible data construction. Not empirical protocol data.",
+  "url": "https://github.com/sunshineluyao/OracleEconLab",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "0.1.0",
+  "datePublished": "2026-08-03",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Oracle4CEG"
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "raw_events",
+      "name": "uma_demo_event_log.csv",
+      "description": "Raw synthetic event records",
+      "contentUrl": "https://raw.githubusercontent.com/sunshineluyao/OracleEconLab/main/data/raw/uma_demo_event_log.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "aeb33d34aea678983226b0fa850ea5615e31a02a475e51e9710ce8ff20d43d97"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "source_registry",
+      "name": "source_registry.csv",
+      "description": "Source and provenance registry",
+      "contentUrl": "https://raw.githubusercontent.com/sunshineluyao/OracleEconLab/main/data/source_registry.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "ebbc3c5f384c1220ee3bef6727fadbcf8b17be0ceb4256ed859337a6f564bdf0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "processed_episodes",
+      "name": "uma_economic_episodes.csv",
+      "description": "Processed economic episode table",
+      "contentUrl": "https://raw.githubusercontent.com/sunshineluyao/OracleEconLab/main/data/processed/uma_economic_episodes.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "16cf328462ee292e9d662044390230c90b35026b376e61effa5b728e8a71aab8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "summary",
+      "name": "summary.csv",
+      "description": "Reproduced descriptive metrics",
+      "contentUrl": "https://raw.githubusercontent.com/sunshineluyao/OracleEconLab/main/outputs/summary.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "7b1c2b6f73fc05994b826896201669dce9e5b9c3aad379122f46169921d59ed1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "research_questions",
+      "name": "research_questions.csv",
+      "description": "Research-question and data-gap registry",
+      "contentUrl": "https://raw.githubusercontent.com/sunshineluyao/OracleEconLab/main/outputs/research_questions.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "4cb060a5e64b9f00473c25f7d62c2fd82b118cc4b5c0380baab8eea74b55e152"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "episodes",
+      "name": "Economic episodes",
+      "description": "One row per complete assertion-dispute-settlement episode.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/episode_id",
+          "name": "episode_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "episode_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/protocol",
+          "name": "protocol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/claim_text",
+          "name": "claim_text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "claim_text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/assertion_time_utc",
+          "name": "assertion_time_utc",
+          "dataType": "sc:DateTime",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "assertion_time_utc"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/challenge_deadline_utc",
+          "name": "challenge_deadline_utc",
+          "dataType": "sc:DateTime",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "challenge_deadline_utc"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/resolution_time_utc",
+          "name": "resolution_time_utc",
+          "dataType": "sc:DateTime",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "resolution_time_utc"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/challenge_window_hours",
+          "name": "challenge_window_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "challenge_window_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/bond_usd",
+          "name": "bond_usd",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "bond_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/reward_usd",
+          "name": "reward_usd",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "reward_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/reward_to_bond_ratio",
+          "name": "reward_to_bond_ratio",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "reward_to_bond_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/was_disputed",
+          "name": "was_disputed",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "was_disputed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/final_outcome",
+          "name": "final_outcome",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "final_outcome"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/resolution_hours",
+          "name": "resolution_hours",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "resolution_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/evidence_status",
+          "name": "evidence_status",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "evidence_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/source_count",
+          "name": "source_count",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "source_count"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "episodes/source_refs",
+          "name": "source_refs",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "processed_episodes"
+            },
+            "extract": {
+              "column": "source_refs"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

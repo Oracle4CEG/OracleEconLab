@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this teaching MVP, please cite it and clearly state whether you used the synthetic fixture or a real-data extension."
+title: "OracleEconLab: A Teaching MVP for Economics, Web3, and Trustworthy AI"
+type: software
+authors:
+  - name: "Oracle4CEG"
+version: 0.1.0
+date-released: 2026-08-03
+url: "https://github.com/sunshineluyao/OracleEconLab"
+repository-code: "https://github.com/sunshineluyao/OracleEconLab"
+license: MIT
+abstract: "A zero-dependency source-to-episode teaching pipeline with governed synthetic data, economic definitions, research-design registry, and reproducible visualizations."
+keywords:
+  - economics
+  - Web3
+  - optimistic oracle
+  - trustworthy AI
+  - reproducible research
+  - data governance

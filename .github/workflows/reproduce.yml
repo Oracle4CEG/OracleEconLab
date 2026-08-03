@@ -1,0 +1,25 @@
+name: Reproduce teaching MVP
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reproduce all derived artifacts
+        run: python src/reproduce.py
+      - name: Run contract tests
+        run: python -m unittest discover -s tests -v
+      - name: Require committed outputs to be reproducible
+        run: git diff --exit-code -- data/processed outputs figures data/croissant.json data/checksums.sha256
