@@ -1,6 +1,0 @@
-episode_id,protocol,bond_usd,reward_usd,was_disputed,final_outcome,resolution_hours,evidence_status,source_ref
-demo-001,UMA,100,10,false,accepted,2,complete,synthetic-example-001
-demo-002,UMA,100,15,true,proposer_won,48,complete,synthetic-example-002
-demo-003,UMA,150,20,false,accepted,3,complete,synthetic-example-003
-demo-004,UMA,200,25,true,disputer_won,72,complete,synthetic-example-004
-demo-005,UMA,300,30,false,accepted,4,partial,synthetic-example-005

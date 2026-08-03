@@ -1,0 +1,13 @@
+event_id,episode_id,protocol,event_type,event_time_utc,actor_role,claim_text,challenge_window_hours,bond_usd,reward_usd,final_outcome,evidence_status,source_id,source_ref,retrieved_at_utc
+demo-001-A,demo-001,UMA,ASSERTION,2026-01-01T00:00:00Z,proposer,Will the reference price be at least 100?,2,100,10,,complete,SRC-SYNTH-001,synthetic://demo-001/assertion,2026-08-03T00:00:00Z
+demo-001-S,demo-001,UMA,SETTLEMENT,2026-01-01T02:00:00Z,protocol,,,,,accepted,complete,SRC-SYNTH-001,synthetic://demo-001/settlement,2026-08-03T00:00:00Z
+demo-002-A,demo-002,UMA,ASSERTION,2026-01-02T00:00:00Z,proposer,Did the named public event occur?,24,100,15,,complete,SRC-SYNTH-001,synthetic://demo-002/assertion,2026-08-03T00:00:00Z
+demo-002-D,demo-002,UMA,DISPUTE,2026-01-02T12:00:00Z,disputer,,,,,,complete,SRC-SYNTH-001,synthetic://demo-002/dispute,2026-08-03T00:00:00Z
+demo-002-S,demo-002,UMA,SETTLEMENT,2026-01-04T00:00:00Z,protocol,,,,,proposer_won,complete,SRC-SYNTH-001,synthetic://demo-002/settlement,2026-08-03T00:00:00Z
+demo-003-A,demo-003,UMA,ASSERTION,2026-01-05T00:00:00Z,proposer,Was the reported index value below 50?,3,150,20,,complete,SRC-SYNTH-001,synthetic://demo-003/assertion,2026-08-03T00:00:00Z
+demo-003-S,demo-003,UMA,SETTLEMENT,2026-01-05T03:00:00Z,protocol,,,,,accepted,complete,SRC-SYNTH-001,synthetic://demo-003/settlement,2026-08-03T00:00:00Z
+demo-004-A,demo-004,UMA,ASSERTION,2026-01-06T00:00:00Z,proposer,Did the project meet the stated milestone?,24,200,25,,complete,SRC-SYNTH-001,synthetic://demo-004/assertion,2026-08-03T00:00:00Z
+demo-004-D,demo-004,UMA,DISPUTE,2026-01-06T20:00:00Z,disputer,,,,,,complete,SRC-SYNTH-001,synthetic://demo-004/dispute,2026-08-03T00:00:00Z
+demo-004-S,demo-004,UMA,SETTLEMENT,2026-01-09T00:00:00Z,protocol,,,,,disputer_won,complete,SRC-SYNTH-001,synthetic://demo-004/settlement,2026-08-03T00:00:00Z
+demo-005-A,demo-005,UMA,ASSERTION,2026-01-10T00:00:00Z,proposer,Was the synthetic market condition satisfied?,4,300,30,,partial,SRC-SYNTH-001,synthetic://demo-005/assertion,2026-08-03T00:00:00Z
+demo-005-S,demo-005,UMA,SETTLEMENT,2026-01-10T04:00:00Z,protocol,,,,,accepted,partial,SRC-SYNTH-001,synthetic://demo-005/settlement,2026-08-03T00:00:00Z

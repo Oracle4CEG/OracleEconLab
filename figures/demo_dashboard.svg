@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+<rect x="0" y="0" width="1280" height="800" rx="0" fill="#F4F7FB" stroke="none"/>
+<text x="52" y="58" font-family="Inter,Arial,sans-serif" font-size="30" fill="#101828" font-weight="700" text-anchor="start">OracleEconLab · Teaching MVP dashboard</text>
+<text x="52" y="88" font-family="Inter,Arial,sans-serif" font-size="16" fill="#B54708" font-weight="600" text-anchor="start">Synthetic observations · computation demo only · not empirical UMA evidence</text>
+<rect x="48" y="120" width="572" height="250" rx="20" fill="#FFFFFF" stroke="#D8E2F0"/>
+<rect x="660" y="120" width="572" height="250" rx="20" fill="#FFFFFF" stroke="#D8E2F0"/>
+<rect x="48" y="410" width="572" height="330" rx="20" fill="#FFFFFF" stroke="#D8E2F0"/>
+<rect x="660" y="410" width="572" height="330" rx="20" fill="#FFFFFF" stroke="#D8E2F0"/>
+<text x="76" y="162" font-family="Inter,Arial,sans-serif" font-size="20" fill="#172B4D" font-weight="700" text-anchor="start">1 · Costly monitoring supply</text>
+<text x="76" y="192" font-family="Inter,Arial,sans-serif" font-size="15" fill="#667085" font-weight="400" text-anchor="start">Was a valid dispute recorded?</text>
+<rect x="76" y="228" width="516" height="44" rx="12" fill="#E8EDF5" stroke="none"/>
+<rect x="76" y="228" width="206.4" height="44" rx="12" fill="#6C5CE7" stroke="none"/>
+<text x="88" y="257" font-family="Inter,Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Disputed 40%</text>
+<text x="580" y="257" font-family="Inter,Arial,sans-serif" font-size="15" fill="#344054" font-weight="600" text-anchor="end">Undisputed 60%</text>
+<text x="76" y="314" font-family="Inter,Arial,sans-serif" font-size="16" fill="#344054" font-weight="600" text-anchor="start">2 of 5 episodes received costly monitoring</text>
+<text x="76" y="342" font-family="Inter,Arial,sans-serif" font-size="14" fill="#B54708" font-weight="600" text-anchor="start">Dispute incidence is not an error rate.</text>
+<text x="688" y="162" font-family="Inter,Arial,sans-serif" font-size="20" fill="#172B4D" font-weight="700" text-anchor="start">2 · Capital and explicit incentive</text>
+<text x="688" y="192" font-family="Inter,Arial,sans-serif" font-size="15" fill="#667085" font-weight="400" text-anchor="start">Sample medians in USD</text>
+<rect x="776" y="227.3913043478261" width="100" height="102.6086956521739" rx="10" fill="#176B87" stroke="none"/>
+<text x="826" y="215.3913043478261" font-family="Inter,Arial,sans-serif" font-size="19" fill="#172B4D" font-weight="700" text-anchor="middle">$150</text>
+<text x="826" y="355" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="middle">Proposer bond</text>
+<rect x="1016" y="316.3188405797101" width="100" height="13.681159420289855" rx="10" fill="#F4A261" stroke="none"/>
+<text x="1066" y="304.3188405797101" font-family="Inter,Arial,sans-serif" font-size="19" fill="#172B4D" font-weight="700" text-anchor="middle">$20</text>
+<text x="1066" y="355" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="middle">Reward</text>
+<text x="76" y="452" font-family="Inter,Arial,sans-serif" font-size="20" fill="#172B4D" font-weight="700" text-anchor="start">3 · Institutional delay</text>
+<text x="76" y="480" font-family="Inter,Arial,sans-serif" font-size="15" fill="#667085" font-weight="400" text-anchor="start">Hours from assertion to protocol settlement</text>
+<text x="76" y="535" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="start">demo-001</text>
+<rect x="170" y="518" width="370" height="22" rx="6" fill="#EDF1F7" stroke="none"/>
+<rect x="170" y="518" width="10.277777777777779" height="22" rx="6" fill="#36B37E" stroke="none"/>
+<text x="558" y="535" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="700" text-anchor="end">2 h</text>
+<text x="76" y="577" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="start">demo-002</text>
+<rect x="170" y="560" width="370" height="22" rx="6" fill="#EDF1F7" stroke="none"/>
+<rect x="170" y="560" width="246.66666666666666" height="22" rx="6" fill="#176B87" stroke="none"/>
+<text x="558" y="577" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="700" text-anchor="end">48 h</text>
+<text x="76" y="619" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="start">demo-003</text>
+<rect x="170" y="602" width="370" height="22" rx="6" fill="#EDF1F7" stroke="none"/>
+<rect x="170" y="602" width="15.416666666666666" height="22" rx="6" fill="#36B37E" stroke="none"/>
+<text x="558" y="619" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="700" text-anchor="end">3 h</text>
+<text x="76" y="661" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="start">demo-004</text>
+<rect x="170" y="644" width="370" height="22" rx="6" fill="#EDF1F7" stroke="none"/>
+<rect x="170" y="644" width="370.0" height="22" rx="6" fill="#E05A47" stroke="none"/>
+<text x="558" y="661" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="700" text-anchor="end">72 h</text>
+<text x="76" y="703" font-family="Inter,Arial,sans-serif" font-size="14" fill="#475467" font-weight="600" text-anchor="start">demo-005</text>
+<rect x="170" y="686" width="370" height="22" rx="6" fill="#EDF1F7" stroke="none"/>
+<rect x="170" y="686" width="20.555555555555557" height="22" rx="6" fill="#36B37E" stroke="none"/>
+<text x="558" y="703" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="700" text-anchor="end">4 h</text>
+<text x="76" y="726" font-family="Inter,Arial,sans-serif" font-size="14" fill="#667085" font-weight="400" text-anchor="start">Longer resolution can imply more capital lock-up.</text>
+<text x="688" y="452" font-family="Inter,Arial,sans-serif" font-size="20" fill="#172B4D" font-weight="700" text-anchor="start">4 · Trustworthy-AI readiness</text>
+<text x="688" y="480" font-family="Inter,Arial,sans-serif" font-size="15" fill="#667085" font-weight="400" text-anchor="start">What this MVP can and cannot support</text>
+<text x="688" y="522" font-family="Inter,Arial,sans-serif" font-size="15" fill="#344054" font-weight="600" text-anchor="start">Complete source trail</text>
+<text x="1172" y="522" font-family="Inter,Arial,sans-serif" font-size="15" fill="#067647" font-weight="700" text-anchor="end">80%</text>
+<rect x="688" y="536" width="484" height="18" rx="6" fill="#E8EDF5" stroke="none"/>
+<rect x="688" y="536" width="387.20000000000005" height="18" rx="6" fill="#36B37E" stroke="none"/>
+<text x="688" y="606" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="600" text-anchor="start">Economic episode construction</text>
+<rect x="1070" y="588" width="102" height="28" rx="14" fill="#ECFDF3" stroke="none"/>
+<text x="1121" y="607" font-family="Inter,Arial,sans-serif" font-size="12" fill="#067647" font-weight="700" text-anchor="middle">READY</text>
+<text x="688" y="651" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="600" text-anchor="start">Decision-time evidence snapshots</text>
+<rect x="1070" y="633" width="102" height="28" rx="14" fill="#FFFAEB" stroke="none"/>
+<text x="1121" y="652" font-family="Inter,Arial,sans-serif" font-size="12" fill="#B54708" font-weight="700" text-anchor="middle">MISSING</text>
+<text x="688" y="696" font-family="Inter,Arial,sans-serif" font-size="14" fill="#344054" font-weight="600" text-anchor="start">Independent ground-truth labels</text>
+<rect x="1070" y="678" width="102" height="28" rx="14" fill="#FEF3F2" stroke="none"/>
+<text x="1121" y="697" font-family="Inter,Arial,sans-serif" font-size="12" fill="#B42318" font-weight="700" text-anchor="middle">MISSING</text>
+<text x="688" y="726" font-family="Inter,Arial,sans-serif" font-size="14" fill="#6941C6" font-weight="700" text-anchor="start">Therefore: pipeline-ready, not yet an AI benchmark.</text>
+</svg>

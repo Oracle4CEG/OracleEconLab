@@ -1,0 +1,18 @@
+OracleEconLab Data License
+
+Unless a file or source registry entry states otherwise, the original synthetic
+teaching data in data/raw/ and data/processed/ and the generated tabular outputs
+are licensed under the Creative Commons Attribution 4.0 International license
+(CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution should identify "OracleEconLab contributors" and link to:
+https://github.com/sunshineluyao/OracleEconLab
+
+This notice does not grant rights to future third-party data, protocol records,
+documentation, trademarks, or linked sources. Each such source remains subject
+to its own license or terms, which must be recorded in data/source_registry.csv.
+
+Software and documentation are governed by the repository's MIT LICENSE unless
+otherwise noted.

@@ -1,0 +1,3 @@
+source_id,source_type,provider,title,canonical_url,retrieved_at_utc,license_or_terms,coverage,role,status
+SRC-SYNTH-001,synthetic_fixture,OracleEconLab,Synthetic UMA event fixture,https://github.com/sunshineluyao/OracleEconLab/blob/main/data/raw/uma_demo_event_log.csv,2026-08-03T00:00:00Z,CC-BY-4.0,Five fictional episodes,Pipeline input,synthetic
+SRC-DOC-UMA,protocol_documentation,UMA,How UMA works,https://docs.uma.xyz/protocol-overview/how-does-umas-oracle-work,2026-08-03T00:00:00Z,Website terms,Mechanism definitions,Conceptual reference,documentation-only
