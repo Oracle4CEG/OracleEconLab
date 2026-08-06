@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oracle-econ-atlas.local/schemas/economic-variable-dictionary-1.0.0.json",
+  "title": "Economic variable dictionary entry",
+  "type": "object",
+  "required": [
+    "variable_name", "track", "mathematical_definition", "indexing",
+    "observation_unit", "measurement_unit", "economic_definition",
+    "economic_mechanism", "hypothesis_role", "source_mapping",
+    "decision_time_availability", "evidence_class", "missing_value_rule",
+    "validation_rule", "references", "measurement_limitations",
+    "uma_constructability"
+  ],
+  "properties": {
+    "variable_name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "track": {"enum": ["identity", "timing", "incentive", "penalty", "capital", "cost", "outcome", "monitoring", "provenance", "trustworthy_ai"]},
+    "mathematical_definition": {"type": "string", "minLength": 1},
+    "indexing": {"type": "string", "minLength": 1},
+    "observation_unit": {"type": "string", "minLength": 1},
+    "measurement_unit": {"type": "string", "minLength": 1},
+    "economic_definition": {"type": "string", "minLength": 1},
+    "economic_mechanism": {"type": "string", "minLength": 1},
+    "hypothesis_role": {"type": "string", "minLength": 1},
+    "source_mapping": {"type": "string", "minLength": 1},
+    "decision_time_availability": {"enum": ["T0", "T1", "T2", "terminal_only", "retrospective_only", "not_applicable"]},
+    "evidence_class": {"enum": ["contract_parameter", "event", "token_flow", "state_delta", "transaction_receipt", "cross_chain_link", "external_evidence", "derived"]},
+    "missing_value_rule": {"type": "string", "minLength": 1},
+    "validation_rule": {"type": "string", "minLength": 1},
+    "references": {"type": "string", "minLength": 1},
+    "measurement_limitations": {"type": "string", "minLength": 1},
+    "uma_constructability": {"enum": ["complete", "partial", "unavailable", "not_applicable"]},
+    "uma_source_tables": {"type": "string"},
+    "uma_non_null_observations": {"type": ["integer", "null"], "minimum": 0},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

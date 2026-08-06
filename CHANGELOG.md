@@ -2,6 +2,26 @@
 
 All notable changes to this teaching artifact are documented here.
 
+## [Unreleased] — real-release-v1.5
+
+### Added
+
+- reusable real-data collectors and protocol adapters under `src/oracle_ledger/`;
+- reproducible ingestion, QC, case-study, and analysis entry points under `scripts/`;
+- versioned accountability and economic-observation schemas under `schemas/`;
+- a pinned economic-release environment and package metadata; and
+- repository guards preventing credentials, mounted datasets, generated
+  figures, reports, and paper sources from entering Git.
+
+### Changed
+
+- replaced server-specific default data paths with repository-relative paths
+  configurable through environment variables;
+- updated repository URLs from the former personal location to the Oracle4CEG
+  organization; and
+- retained the original teaching fixture as the lightweight CI contract while
+  keeping large real datasets external to Git.
+
 ## [0.1.0] — 2026-08-03
 
 ### Added

@@ -6,8 +6,8 @@ authors:
   - name: "Oracle4CEG"
 version: 0.1.0
 date-released: 2026-08-03
-url: "https://github.com/sunshineluyao/OracleEconLab"
-repository-code: "https://github.com/sunshineluyao/OracleEconLab"
+url: "https://github.com/Oracle4CEG/OracleEconLab"
+repository-code: "https://github.com/Oracle4CEG/OracleEconLab"
 license: MIT
 abstract: "A zero-dependency source-to-episode teaching pipeline with governed synthetic data, economic definitions, research-design registry, and reproducible visualizations."
 keywords:

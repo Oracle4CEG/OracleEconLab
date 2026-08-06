@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "economic_semantics_events.schema.json",
+  "title": "Source- and transaction-gated oracle economic evidence",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "oracle_network",
+    "economic_kind",
+    "economic_evidence_class",
+    "realization_status",
+    "source_event",
+    "source_table",
+    "tx_or_state_evidence",
+    "cashflow_verified",
+    "state_delta_verified",
+    "source_semantics_rule_id",
+    "include_in_realized_reward",
+    "include_in_realized_slash"
+  ],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "oracle_network": {"type": "string"},
+    "security_chain": {"type": "string"},
+    "mechanism": {"type": "string"},
+    "economic_kind": {"enum": ["reward", "slash", "penalty", "accounting", "parameter", "state_delta"]},
+    "economic_evidence_class": {"type": "string"},
+    "realization_status": {"type": "string"},
+    "actor": {"type": ["string", "null"]},
+    "counterparty": {"type": ["string", "null"]},
+    "amount_raw": {"$ref": "#/$defs/rawAmount"},
+    "signed_amount_raw": {"$ref": "#/$defs/rawAmount"},
+    "asset": {"type": ["string", "null"]},
+    "asset_decimals": {"type": ["integer", "null"], "minimum": 0},
+    "source_event": {"type": "string"},
+    "source_tx": {"type": ["string", "null"]},
+    "source_block": {"type": ["integer", "null"]},
+    "source_log_index": {"type": ["integer", "null"]},
+    "source_contract": {"type": ["string", "null"]},
+    "source_table": {"type": "string"},
+    "tx_or_state_evidence": {"type": "string"},
+    "cashflow_verified": {"type": "boolean"},
+    "state_delta_verified": {"type": "boolean"},
+    "source_semantics_rule_id": {"type": "string"},
+    "source_confidence": {"enum": ["A", "B", "C", "U"]},
+    "include_in_realized_reward": {"type": "boolean"},
+    "include_in_realized_slash": {"type": "boolean"},
+    "do_not_sum_group": {"type": ["string", "null"]},
+    "interpretation_note": {"type": "string"}
+  },
+  "$defs": {
+    "rawAmount": {
+      "type": ["string", "null"],
+      "pattern": "^-?[0-9]+$"
+    }
+  }
+}

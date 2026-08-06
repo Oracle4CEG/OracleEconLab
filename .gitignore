@@ -216,3 +216,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OracleEconLab real-release local state and credentials
+.env.*
+!.env.example
+
+# Large or externally mounted research data are released separately.
+data/applications/
+data/case_studies/
+data/curated/
+data/dictionaries/
+data/manifests/
+data/releases/
+data/analysis/
+data/raw/*
+!data/raw/uma_demo_event_log.csv
+*.parquet
+*.jsonl
+*.jsonl.gz
+
+# Local analyses, reports, paper sources, and rendered assets are not part of
+# the code-only real-release branch.
+analysis_outputs/
+reports/
+paper/
+tables/
+registry/
+*.tex
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+figures/**/*.png
+figures/**/*.pdf

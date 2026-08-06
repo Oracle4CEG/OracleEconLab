@@ -2,9 +2,15 @@
 
 **A teacher-scale, reproducible MVP for Economics × Web3 × Trustworthy AI**
 
-[![Reproduce teaching MVP](https://github.com/sunshineluyao/OracleEconLab/actions/workflows/reproduce.yml/badge.svg)](https://github.com/sunshineluyao/OracleEconLab/actions/workflows/reproduce.yml)
+[![Reproduce teaching MVP](https://github.com/Oracle4CEG/OracleEconLab/actions/workflows/reproduce.yml/badge.svg)](https://github.com/Oracle4CEG/OracleEconLab/actions/workflows/reproduce.yml)
 
 OracleEconLab shows students how to turn source-linked protocol records into economically meaningful episodes, governed data, research variables, and visual research questions.
+
+> **Real-release branch:** `real-release-v1.5` adds the reusable collectors,
+> protocol adapters, schemas, and dependency specification for the real-data
+> research release. Large datasets, generated figures, reports, and paper
+> sources are intentionally distributed outside Git. The bundled root data
+> remain the small synthetic fixture used by continuous integration.
 
 > **Evidence boundary:** the bundled five episodes are fictional teaching fixtures. They demonstrate the pipeline and formulas only. They are **not real UMA observations**, not an AI benchmark, and not empirical findings.
 
@@ -127,6 +133,14 @@ OracleEconLab/
 ├── outputs/
 │   ├── summary.csv
 │   └── research_questions.csv
-├── src/reproduce.py
+├── schemas/
+│   ├── cross_chain_economic_observation.schema.json
+│   └── economic_variable_dictionary.schema.json
+├── scripts/
+│   ├── applications/
+│   └── case_studies/
+├── src/
+│   ├── reproduce.py
+│   └── oracle_ledger/
 └── tests/test_pipeline.py
 ```

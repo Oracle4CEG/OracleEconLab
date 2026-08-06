@@ -105,4 +105,4 @@ For AI evaluation, information created after the decision time must be excluded 
 
 Changes to raw or processed schemas require updates to the variable dictionary, provenance, Croissant metadata, checksums, tests, and changelog in the same commit. A real dataset should be released under a new version and clearly separated from the synthetic fixture.
 
-Issues and contributions: <https://github.com/sunshineluyao/OracleEconLab/issues>
+Issues and contributions: <https://github.com/Oracle4CEG/OracleEconLab/issues>

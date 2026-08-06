@@ -1,4 +1,4 @@
-.PHONY: reproduce test check
+.PHONY: reproduce compile-release test check
 
 reproduce:
 	python src/reproduce.py
@@ -6,4 +6,7 @@ reproduce:
 test:
 	python -m unittest discover -s tests -v
 
-check: reproduce test
+compile-release:
+	python -m compileall -q src/oracle_ledger scripts
+
+check: reproduce compile-release test

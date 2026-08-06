@@ -1,0 +1,25 @@
+[project]
+name = "oracle-econ-lab"
+version = "1.5.0"
+description = "Audit-first tools for reconstructing oracle economic lifecycles"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.5",
+  "eth-abi>=5.0",
+  "eth-utils>=5.0",
+  "jsonschema>=4.23",
+  "matplotlib>=3.9",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyarrow>=16.0",
+  "PyYAML>=6.0",
+  "requests>=2.32",
+  "scikit-learn>=1.5",
+  "statsmodels>=0.14",
+]
+
+[project.scripts]
+oracle-ledger = "oracle_ledger.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
